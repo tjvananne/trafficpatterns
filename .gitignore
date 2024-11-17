@@ -1,0 +1,8 @@
+
+
+venv
+.env
+db
+db.csv
+*__pycache__*
+
