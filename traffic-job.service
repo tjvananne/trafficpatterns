@@ -1,0 +1,11 @@
+[Unit]
+Description=Traffic Data Job Runner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/home/taylor/repos/trafficpatterns
+ExecStart=/bin/bash /home/taylor/repos/trafficpatterns/traffic-job.sh
+
+[Install]
+WantedBy=default.target
